@@ -8,7 +8,12 @@ module.exports = {
   ],
   darkMode: ["class"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'IBM_PLEX': ['IBM Plex Serif', 'serif'],
+        'Fira_Sans':['Fira Sans','sans-serif'], // Replace 'YourFontName' with the actual font name
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require('flowbite/plugin')],
 }

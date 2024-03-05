@@ -10,7 +10,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-32 mb-48 font-medium text-5xl leading-[52px]"
+        className="mt-32 mb-48 font-IBM_PLEX font-medium text-4xl leading-[44px]"
       >
         Hey there, I'm Nitin, a Jaipur-based freelance <span className=" underline text-orange-400">product designer</span> with over 1 year of experience, turning ideas into interactive experiences that leave a lasting impression.
       </motion.h2>
@@ -33,7 +33,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
           <Link className="no-underline" href={post.slug}>
-            <h2 className="underline-offset-0 no-underline font-medium text-3xl border-t-2 border-spacing-4 pt-8">{post.title}</h2>
+            <h2 className="underline-offset-0 no-underline font-IBM_PLEX font-medium text-3xl border-t-2 border-spacing-4 pt-8">{post.title}</h2>
           </Link>
           {post.description && <p>{post.description}</p>}
         </article>
