@@ -11,14 +11,16 @@ interface PostProps {
 }
 
 async function getPostFromParams(params: PostProps["params"]) {
-  const slug = params?.slug?.join("/")
-  const post = allPosts.find((post) => post.slugAsParams === slug)
+  const slug = params?.slug?.join("/");
+  const post = allPosts.find((post) => {
+    return post.slugAsParams === slug && (post.category === "Work" || post.category === "playground");
+  });
 
   if (!post) {
-    null
+    notFound();
   }
 
-  return post
+  return post;
 }
 
 export async function generateMetadata({
@@ -59,26 +61,25 @@ export default async function PostPage({ params }: PostProps) {
     const nextPost = allPosts[currentIndex + 1];
 
   return (
-    <div className="flex">
-    <article className="py-6  max-w-full mt-10 prose dark:prose-invert flex-1">
-      <h1 className="mb-10 font-IBM_PLEX">{post.title}</h1>
+    <div className="flex flex-col md:flex-row">
+    <article className="py-6 max-w-full md:max-w-4xl text-xl md:text-lg mt-10 prose dark:prose-invert flex-1">
+      <h1 className="mb-6 text-4xl md:text-3xl font-semibold truncate">{post.title}</h1>
       {post.description && (
-        <p className="text-xl mt-0 text-slate-700 dark:text-slate-200">
+        <p className="text-lg mt-0 text-slate-700 dark:text-slate-200">
           {post.description}
         </p>
       )}
-      <hr className="my-4" />
       <Mdx code={post.body.code} />
-      <hr/>
-      <div className="mt-8 flex flex-row justify-between">
+  
+      <div className="mt-8 flex flex-col md:flex-row md:justify-between">
         {previousPost && (
           <Link href={`/posts/${previousPost.slugAsParams}`}>
-            <p className=" max-w-md">&larr; Previous Post: {previousPost.title}</p>
+            <p className="mb-4 md:mb-0 md:max-w-md">&larr; Previous Post: {previousPost.title}</p>
           </Link>
         )}
         {nextPost && (
           <Link href={`/posts/${nextPost.slugAsParams}`}>
-            <p className="ml-4 text-blue-500 hover:underline">
+            <p className="md:ml-4 text-blue-500 hover:underline">
               Next Post: {nextPost.title} &rarr;
             </p>
           </Link>

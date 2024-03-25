@@ -44,9 +44,19 @@ export const Post = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
+    category:{
+      type: "string",
+      required: true,
+    },
+    image: {
+      type: "string", // or you can use "image" type if your CMS supports it
+      required: true,
+    }
   },
   computedFields,
 }))
+
+
 
 export default makeSource({
   contentDirPath: "./content",

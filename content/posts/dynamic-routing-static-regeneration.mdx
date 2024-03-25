@@ -1,25 +1,259 @@
 ---
-title: TableTurn - Optimizing Reservations and Customer Experience in a Compact Restaurant
-description: How to use incremental static regeneration using dynamic routes.
+title: Flow- A 12-hours design challenge—Designing User-Centric Solution for Restaurant Reservation Delays Optimzing Table Turnover
+description: The solution aim to improve the challenges faced by both diners and restaurant.
 date: "2023-03-04"
+category: "playground"
+image: '/Showcase6.svg'
 ---
 
-<section className="">
-## Introduction
-<p className=" font-Fira_Sans text-2xl p-8 text-gray-500">TableTurn aims to tackle the widespread issue of long wait times and limited seating in restaurants, particularly prevalent in high-traffic areas. This project seeks to develop a mobile application that empowers both diners and restaurants to navigate busy environments effectively, leading to a more efficient and enjoyable dining experience for everyone.</p>
+<section className="mt-20">
 
-## Context
+<section>
 
-<p class=" text-gray-800 dark:text-gray-200 mt-4">The widespread issue of long wait times and inefficient systems in restaurants is a well-documented problem.  These challenges can create frustration and inconvenience for diners, impacting their overall experience. Recognizing the potential impact on both customers and restaurants.. The scenario leads to framing and thinking problems such as</p>
+<p className=" border-l-4 p-4 text-2xl border-orange-500 italic border-spacing-2">This 12-hour design challenge propelled me to the final interview round for a User Experience Designer position. I designed the solution independently, showcasing my ability to work effectively under pressure and deliver impactful results.</p>
 
+> This case study narrates the key insights and learnings I gained from tackling a challenging design brief.
 
-<ul class="list-disc max-w-3xl ml-4 space-y-2">
-    <li class="text-gray-800"><span className=" font-bold">Limited access to real-time information</span>: Users lack transparency about a restaurant's current occupancy, leading to uncertainty and potentially wasted time if they arrive at a full restaurant.</li>
-    <li class="text-gray-800">Inefficient waitlist management: Traditional physical waitlists can be cumbersome, lacking real-time updates and user control over their wait time.</li>
-    <li class="text-gray-800">Potential for order errors and delays: Traditional ordering methods can be prone to errors and delays, especially during peak hours.</li>
-    <li class="text-gray-800">Limited user control over the experience: Users often have limited control over the wait time and efficiency of their dining experience.</li>
-</ul>
+A few months ago, I applied for a UX designer role that I felt very confident about. However, the company used a design challenge as part of the selection process to assess practical skills. I was given an initial brief and **12 hours to develop a problem statement and propose a solution**. This intensive process allowed me to showcase my ability to work independently, manage my time effectively, and translate user needs into actionable design solutions.
 
 
+<img src="/Brief.svg"/>
+
+#### Plan of Action
+
+I planned my day meticulously to ensure that I stay on the track throughout the day and complete the challenge within given time period 
+
+<img src="/Process2.svg"/>
+
+
+## Initial Product Vision: Understanding Diners' Jobs
+
+**Product Vision**
+
+We envision a product that empowers diners to have a smooth and enjoyable restaurant experience. By leveraging the JTBD framework, we will identify the key jobs diners need to complete throughout their visit (from finding a restaurant to paying the bill).  The product will then focus on providing solutions that effectively address these jobs and eliminate the frustrations diners currently experience.
+
+<img src="/A2.jpg"/>
+
+
+**Challenges they face during their "Core Job"**
+So what are the core challenges involved which is blocking the diners from having a stress-free dining experience at the restaurant?
+
+<img src="/Challenge1.svg"/>
+<img src="/Challenge2.svg"/>
+<img src="/Challenge3.svg"/>
+
+
+</section>
+
+<section>
+
+The Jobs-to-be-Done (JTBD) framework proved to be a valuable tool in understanding diner needs related to restaurant waitlists.  Through this framework, I was able to identify three core needs.
+
+
+### **Addressing Core Diner Needs**
+
+<img src="/Need.png"/>
+
+- **Predictability**: Diners crave knowing how long they'll wait to be seated. *Uncertainty creates anxiety and disrupts their plans*.
+- **Control:** Diners desire influence over their waitlist experience. This could involve joining a waitlist remotely, managing their arrival expectations, or even pre-ordering food.
+- **Transparency**: Diners seek clear information about the restaurant's current occupancy and wait times. Lack of transparency leads to frustration and a feeling of being uninformed.
+
+By addressing the core needs of the users, I finally have an understanding of What would be my end goals and objective to.
+
+Before delving into validation, I established some initial assumptions about the product, users, and market. These assumptions act as a springboard for further exploration and ensure I approach user research with open-mindedness.
+
+
+<img src="/A1.png"/>
+<img src="/A2.png"/>
+
+
+<img src="/Understand.svg"/>
+
+
+## Stage 1- Discover
+
+<h4 className="pt-8">I learned to let go of my notions of what a product should be—and allow research data and user insights to guide me to what the product needs to become.</h4>
+
+</section>
+
+<section>
+
+{/* It is very crucial to understand the nature of the problem, reason of the problem before acting on solving it. Through analyzing the exisitng data sources we might some answers we are looking for.
+
+I started by looking into the leading articles, journals and research papers who have been contributing in problem resolvance for the restaurants.
+
+**Findings**
+
+- Maximum waiting time period recorded was 30 min, it is believe to be that the 30 min are enough to understand the Human nature and psychology behind.
+- From the OpenTable report 23% diners leaving restaurant due to longer wait time.
+- Pre-booking and last-minute cancellations may result in empty tables and a waste of the previously made arrangements. To meet the system's limitations,
+there should be a proportionate number of tables for reservation and walk-in customers, as well as limitedtime booking and a waiting list */}
+
+I made a very rough overview of their challenges, needs and desired outcomes, those are totally based on my belief and prediction about the diners frustrated behavior towards the cumbersome system. We wouldn't know what they actually do, feel, say and think until we talk with them.
+
+To gain a deeper understanding of diner behavior and priorities, I conducted a user research survey. Although the initial participation rate of 12 out of 20 was lower than ideal, the responses provided valuable information. The survey questions were crafted to explore diner actions, behavior patterns, and what factors matter most to them during a dining experience.
+
+**Through Survey I identified that...**
+
+- The majority of respondents (under 35 years old) prioritize socializing with friends when dining out.
+- Over half (58%) reported going to restaurants 1-2 times per month, suggesting a regular dining habit.
+- A significant portion (50%) prefer making reservations in advance, indicating a desire for a more organized dining experience.
+- A concerning number of respondents (60%) reported waiting over 30 minutes at a restaurant recently. This highlights a potential pain point for diners.
+
+In order to efficiently derive insights and user needs, we carried out 2 semi-structured interviews in order to discover further insights into the issues at hand.
+
+**Thorough understanding of these questions usually leads to only a handful of truly appropriate (and often oh-duh-how-has-no-one-done-this-before) solutions.**
+
+<img src="/Emp2.jpg"/>
+
+Coducting the interview provided a window into the world of diner frustration. While speaking with handful of the participants. It became clear that a significant level of dissatisfaction exists with the current dining experience. Particularly, Issues surrounding the wait time, communication breakdowns and lack of control over the waitlist process emerged as major pain-points.
+
+#### Our interviews revealed a critical disconnect between user expectations and the information currently available through restaurant reservation apps. Two key limitations emerged
+
+**Major Key Insight**
+
+- Lack of real time wait times and no live occupancy indicator. The information gap led to wasted time and uncertainity.
+- Diners reported arriving at full restaurant despite reservations, highlighting the need for transparency to plan their visit effectively.
+- During the interview, Diners reported confusion surrounding reservation confirmation and waitlist procedures.
+- Interviewees highlighted challenges associated with booking reservations for large groups, particularly families.
+
+### What Measures Competitors are taking in order to deal with the situation
+
+We should explore current waitlist solutions from our competitors to identify strengths, weaknesses, and potential areas for differentiation
+
+My analysis of existing solutions revealed a gap in app-based waitlist management. While some restaurants rely on manual paper waitlists, others utilize phone calls or custom software. Here are some interesting observations:
+
+- Focus on Reservations: Apps like Dineout by Swiggy primarily focus on reservations as their core service. This indicates a potential market opportunity for a dedicated waitlist management solution.
+
+- Zomato's Occupancy Management: Zomato employs walk-in offers to manage occupancy during slower periods. This strategy could be a valuable inspiration for our solution, potentially reducing wait times and benefiting both restaurants and diners.
+
+- Limited Technology Adoption: Many Indian restaurants lack established digital systems, relying on call-booking or Google Business Profile booking features. This highlights the need for a user-friendly and accessible solution.
+
+[Competitor Analysis]
+
+<span className="pt-24"></span>
+
+<img src="/Define.svg"/>
+
+## Stage 2 : Analyze
+
+We've successfully navigated Phase 1, gathering valuable user research data through surveys and interviews. Now, it's time to delve deeper in Phase 2, where we focus on defining the core problems diners face when it comes to restaurant wait times. Understanding these pain points is crucial for developing an effective waitlist solution that addresses their needs and frustrations.
+
+
+
+We gathered all the data collected from user surveys and user interviews and grouped them into 3 types of feedback, along with the category they fall into.
+
+<img src="/I6.png"/>
+
+<img src="/U1.svg"/>
+
+
+**Patterns and Themes Identified**
+
+- From the overall pain points we learned that diners crave a more predictable and controlled waitlist experience.
+- From the overall need pattern we learned that Diners prioritize predictability and informed decision-making during the wait.
+- There is an opportunity to create a seamless and empowering waitlist experience for diners.
+
+To understand the user approach and steps to observe, I formulated a simplified task flow map to help understand the steps user would take to complete a given a task such. "How would a user book a seat at restaurant"
+
+<img src="/Taskflow.svg"/>
+
+
+**Refined Problem Statement**
+
+Through analysis of user insights and root cause answers, a key pattern emerged: [Diners lack of control over their wait time and less predictability to know when to visit a restaurant]. This factor acts as the linchpin, holding the core problem together.
+
+### How can we design a dining experience that provides diners with a sense of predictability and control over their wait time, while also ensuring transparency and reducing frustration?
+
+<img className="pt-24" src="/Prototype.svg"/>
+
+<h2 className="pt-20">Ideate</h2>
+
+In the ideation step your goal is to generate as many ideas as possible, informed by the key insights/opportunities/priorities found in Discovery. Creativity and ideation should not be limited.
+
+The previous exercises helped us delve deep into the heart of the problem, identifying the root cause of diner frustration. Now, it's time to leverage this understanding to define our solution space.
+
+This process allows us to vision the product's solution space, leading to the generation of innovative ideas with the power to transform the dining experience.  Next, we'll transform these ideas into tangible prototypes...
+
+### HMW : A more Informed and Testable form
+
+Think of HMW statements as miniature, testable problem statements. They are phrased in a way that allows for rapid ideation and experimentation.
+
+<img className="" src="/idea.jpg"/>
+<p className=" text-center justify-center mb-24 items-center text-sm p-0 m-0 space-x-0 space-y-0 italic">Generating Ideas through forumulating How might we Statements</p>
+
+### Concept Mapping  
+
+The concepts are like pieces of a puzzle. Each idea, on its own, might seem incomplete or unclear. But when you bring them together, they begin to interlock and form a bigger picture.
+
+During the concept building, I kept some questions associated and insight from the user interview to keep my decision informed and effective.
+
+<img className="" src="/CM.jpg"/>
+<p className=" text-center justify-center mb-24 items-center text-sm p-0 m-0 space-x-0 space-y-0 italic">How will diners access the waiting list Concept design</p>
+
+### Crafting Stories
+
+I've been focusing on user-centric design and have created user stories to capture different scenarios and needs. These stories will be crucial for crafting compelling storyboards
+
+<img className="mb-0 pb-0" src="/US.jpg"/>
+<p className=" text-center justify-center mb-24 items-center text-sm p-0 m-0 space-x-0 space-y-0 italic">User Stories</p>
+
+
+<img className="mb-0 pb-0" src="/Storyboard.jpg"/>
+<p className=" text-center justify-center mb-24 items-center text-sm p-0 m-0 space-x-0 space-y-0 italic">Storyboard : Showing Sara's Dining experience at a 5 star restaurant</p>
+
+
+
+> You can follow this link if you wish to look into my complete ideation process.
+
+## Final Prototype
+
+During the brainstorming and storyboarding I came up with 3 possible outcomes for our current user problem.
+
+- Improve the overall table booking experience 
+- Restaurant Accepting Reservations/Waitlist: Streamline the process for users to join the waitlist and receive updates on their position and estimated wait time.
+- Restaurant Unavailable (Reservations & Waitlist Closed): Manage user expectations by clearly communicating unavailability and offering helpful alternatives.
+
+{/* 
+ */}
+
+### Design Strategy Goal # 1
+Effortlessly discover restaurants. Search by date, time, and group size to see clear availability indicators and join waitlists with a tap.
+
+<img className="" src="/S1.svg"/>
+
+### Design Strategy Goal # 2
+Optimize the map-based restaurant search experience by integrating real-time occupancy level indicators, allowing users to make informed dining decisions and save time.
+
+<img className="" src="/S2.jpg"/>
+
+### Design Strategy Goal # 3
+Empower users with a seamless and informative waitlist experience within your restaurant reservation app, allowing them to effectively manage their wait time.
+
+<img className="" src="/S3.svg"/>
+<img className="" src="/S4.svg"/>
+
+### Design Strategy Goal # 4
+A transparent and informative experience to tackle situation when restaurant is Unavailable for reservation or waitlists. An alternative way to enjoy the dining experience.
+<img className="" src="/S5.svg"/>
+
+## What's next for us?
+
+- Exploring ways to further refine search options this could include dietary restrictions, outdoor seating availablity etc..
+- Exploring the diners experience when they arrive at the restaurant and their post dining expectations.
+- To enhance the waitlist experience I'm considering feature that allow user to browse menus and potentially pre-order their meals while waiting for their table.
+- Implement QR Code functionality to further refine the Post Arrival Experience.
+- Test ideas with the real users
+
+## Conclusion
+
+This 12-hour design challenge has been a whirlwind of ideation, iteration, and exploration! I've delved into the complexities of restaurant discovery and waitlist management, and emerged with a comprehensive plan to enhance the user experience for both diners and restaurants.
+
+This challenge was a great learning experience in time management. I honed my ability to prioritize tasks and keep the design process on track within the tight timeframe.
+
+To fully address all aspects of the problem, additional time would be needed for in-depth exploration and implementation. The provided design strategy offers a solid starting point
+
+
+</section>
 
 </section>
