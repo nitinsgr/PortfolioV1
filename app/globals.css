@@ -3,14 +3,131 @@
 @tailwind utilities;
 
 section{
-  font-family: "IBM Plex Serif", serif;
+  /* font-family: Arial, sans-serif; */
+   /* font-family: "Roboto Serif", serif; */
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  @apply justify-start justify-between text-black dark:text-white;
+
+}
+
+p{
+  /* @apply align-baseline text-justify justify-evenly; */
+/* font-family: "Roboto Serif", serif; */
+  font-family: "Libre Baskerville", serif;
+  /* font-family: "Noto Serif", serif; */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  @apply dark:text-white;
+  font-variation-settings:
+    "wdth" 75,
+    "GRAD" 50;
+}
+
+h1{
+  font-family: Georgia, serif;
+  font-size: 18px;
+
+}
+
+ul{
+  @apply leading-7 ;
+}
+
+
+
+.image-container{
+  cursor: zoom-in;
+}
+
+.quote{
+  @apply p-8 text-2xl font-normal text-gray-500
+}
+
+.image-container:hover{
+  transform: scale(2);
+  background: gainsboro;
+}
+
+h3{
+  @apply leading-4;
+  /* font-family: "Roboto Serif", serif; */
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75,
+    "GRAD" 50;
+}
+
+h2{
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Roboto Serif", serif; */
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  zoom: 1;
+  font-style: normal;
+  font-style: italic;
+  font-size: 18px;
+  font-variation-settings:
+    "wdth" 75,
+    "GRAD" 50;
+  text-decoration: #8B322C;
+  color: #0C0C0C;
+  @apply dark:text-white;
+  font-optical-sizing: auto;
+}
+
+.heading{
+  /* font-family: "Inter", sans-serif; */
+  font-weight: 200;
+  font-size: x-large;
+  font-style: normal;
+}
+
+.gentium-book plus-bold {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
   font-style: normal;
 }
 
 body{
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Inter", sans-serif;
+  /* font-family: "IBM Plex Serif", serif; */
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.Customfont{
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.container > div:first-child {
+  flex: 0 0 auto;
+}
+
+.container > div:last-child {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.fixed {
+  position: fixed;
+}
