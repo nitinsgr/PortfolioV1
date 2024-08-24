@@ -66,25 +66,31 @@ export default async function PostPage({ params }: PostProps) {
   return (
     <div className="container md:flex md:justify-center">
       <article
-        className="py-4 prose prose-h2:text-xl
+        className="py-4  prose-h2:text-xl
         prose-strong:dark:text-white
-        prose-h2:font-bold
-        prose-lg
-        max-w-3xl
+        max-w-2xl
+         dark:text-white
+       prose-blockquote:border-l-[#5AB2FF]
+         prose-ul:space-y-2
+       prose-p:text-[#161A30]
+       prose-blockquote:bg-[#CAF4FF]
+       prose-blockquote:leading-6
+       prose-blockquote:p-2
+       mr-32
       prose-h3:dark:text-white
        prose-a:dark:text-white
         mt-24"
       >
         <div>
-          <div className=" max-w-7xl prose-xl">
-            <h1 className="text-3xl dark:bg-none bg-gradient-to-br from-lime-300 dark:underline decoration-[#FFBB64]  to-lime-50 p-1 max-w-full dark:text-white md:text-2xl whitespace-normal font-medium">
+          <div className=" max-w-3xl  prose-xl">
+            <h1 className="text-3xl  p-10 font-semibold underline decoration-[#F2613F] dark:bg-none max-w-full dark:text-white md:text- whitespace-normal">
               {post.title}
             </h1>
           </div>
 
           {post.description && (
             <p
-              className="p-4 text-sm text-gray-800 rounded-lg italic"
+              className="text-sm pt-4 text-gray-800 rounded-lg italic"
               role="alert"
             >
               {post.description}
@@ -96,7 +102,7 @@ export default async function PostPage({ params }: PostProps) {
           <Mdx code={post.body.code} />
         </div>
       </article>
-      <div className="mt-8 md:fixed md:border-l-2 border-lime-500 dark:text-white md:pb-8 md:w-80 md:pl-8 md:space-y-10 md:flex-col md:justify-start right-10 md:pt-10">
+      <div className="mt-24  md:fixed md:border-l-2  border-lime-500 dark:text-white md:pb-8 text-sm leading-6 md:w-80 md:pl-8 md:space-y-10 md:flex-col md:justify-start right-10 md:pt-10">
         <p className="italic pb-4 dark:text-white text-lime-600 font-bold">
           More Case Studies..
         </p>

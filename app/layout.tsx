@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html className="scroll-smooth" lang="en">
       <body
-        className={`antialiased min-h-screen bg-[white] dark:bg-[#1C2B2D] text-slate-900 dark:text-[#EEF0E5] ${inter.className}`}
+        className={`antialiased min-h-screen bg-[white] dark:bg-[#0C0C0C] text-slate-900  dark:text-[#EEF0E5] ${inter.className}`}
       >
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -54,6 +54,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
           rel="stylesheet"
         ></link>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></link>
+        
+        <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+
+
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"
@@ -76,7 +87,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         ></link>
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-xl md:max-w-5xl sm:max-w-2xl mx-auto py-10 px-8 ">
+          <div className="max-w-4xl dark:text-white md:max-w-5xl sm:max-w-2xl mx-auto py-10 px-8 ">
             <header>
               <div className="flex md:items-center justify-between">
                 <ModeToggle />
@@ -87,7 +98,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <main className="">
+            <main className="text-black">
               {children}
               <ScrollToTopButton />
             </main>
